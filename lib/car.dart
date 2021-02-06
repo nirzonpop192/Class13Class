@@ -1,7 +1,7 @@
 
 class Car{
-  //**********public variable*************
-  String companyName;
+  //**********private variable*************
+  String _companyName;
   String _modelName;
   String _engineSeries;
   //*********** private variable************
@@ -18,6 +18,11 @@ class Car{
   // ****** setter *********
   set wheel(int _wheel){
     this._wheel=_wheel;
+  }
+  String get companyNameFun =>_companyName;
+  set companyNameFun(String value){
+    //this._companyName= value;
+    _companyName= value;
   }
 
   // normal member function
